@@ -1,0 +1,58 @@
+#si {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid lightgray;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+#si>div:first-child>p {
+    font-size: 1rem;
+    margin: 1rem 0rem;
+}
+
+
+#si>.cwu>p {
+    margin: 1rem 0rem;
+    font-size: 1rem;
+}
+#si>.cwu>div>img{
+    width: 50px;
+    padding: 0px 5px;  
+}
+.cwu .fb:hover {
+    content: url('https://img.icons8.com/?size=100&id=118497&format=png&color=000000'); 
+}
+.cwu .x:hover {
+    content: url('https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000');
+}
+.cwu .yt:hover {
+    content: url('https://img.icons8.com/?size=100&id=19318&format=png&color=000000'); 
+}
+#des {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.store>h1 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem;
+    text-transform: uppercase;
+}
+
+.store>p {
+    color: rgb(103, 98, 98);
+    font-size: 1.5rem;
+
+}
+
+.pay>h1 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem;
+}
+.pay>svg{
+    margin-right: 5px;
+}
