@@ -173,10 +173,11 @@ body {
     color: #fff;
 }
 
+
 .offer>div>button:hover,
 #si>div:first-child>button:hover,
 .card>button:hover,
-.mdcard>button:hover {
+.mdcard>button:hover{
     background-color: rgba(0, 0, 0, 0.753);
     color: white;
 }
