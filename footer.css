@@ -56,3 +56,18 @@
 .pay>svg{
     margin-right: 5px;
 }
+
+.btnsignup>a{
+    border: 1px solid black;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+.btnsignup>a:hover{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+}
