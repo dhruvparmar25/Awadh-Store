@@ -1,11 +1,11 @@
 
-const slider = document.querySelector('.slider');
-const btnleft = document.querySelector('.button-left');
-const btnright = document.querySelector('.button-right');
+var slider = document.querySelector('.slider');
+var btnleft = document.querySelector('.button-left');
+var btnright = document.querySelector('.button-right');
 
-const slider1 = document.querySelector('.slider-1');
-const btnleft1 = document.querySelector('.button-left-1');
-const btnright1 = document.querySelector('.button-right-1');
+var slider1 = document.querySelector('.slider-1');
+var btnleft1 = document.querySelector('.button-left-1');
+var btnright1 = document.querySelector('.button-right-1');
 
 
 function scrollLeft() {
@@ -44,14 +44,14 @@ btnright.addEventListener('click', scrollRight);
 
 // Banner-slide
 
-const container = document.querySelector('.slide-container');
-const slides = document.querySelectorAll('.slideBanner');
-const totalSlides = slides.length;
+var container = document.querySelector('.slide-container');
+var slides = document.querySelectorAll('.slideBanner');
+var totalSlides = slides.length;
 
-let currentIndex = 0;
+var currentIndex = 0;
 
 // Function to update the slide position
-const updateSliderPosition = () => {
+var updateSliderPosition = () => {
     container.style.transform = `translateX(-${currentIndex * 100}%)`;
 
     // Reset to the first slide after the last slide
@@ -67,7 +67,7 @@ const updateSliderPosition = () => {
 };
 
 // Automatic scrolling function
-const startAutoScroll = () => {
+var startAutoScroll = () => {
     setInterval(() => {
         currentIndex++;
         updateSliderPosition();
@@ -76,3 +76,4 @@ const startAutoScroll = () => {
 
 // Start the automatic scroll
 startAutoScroll();
+
