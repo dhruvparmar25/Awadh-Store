@@ -190,47 +190,68 @@ body {
     margin: auto;
     align-items: center;
     margin-bottom: 1rem;
-
-
 }
 
-.card>img {
-    width: 80%;
-    justify-content: center;
-}
-
-.card>p,
-h6,
-.mdcard>p,
-h6 {
-    width: 80%;
-    font-size: 1rem;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 10px;
-
-}
-
-.card>button,
-.mdcard>button {
-    border: 1px solid black;
-    padding: 10px 35px;
-    text-transform: uppercase;
-    background-color: transparent;
-    cursor: pointer;
-    text-transform: uppercase;
-    justify-content: center;
-    text-align: center;
+/* Container for the entire slider */
+.slider-container {
+    
+    display: flex;
     align-items: center;
-    background-color: black;
-    color: #fff;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;  /* Prevent vertical scrolling */
+    position: relative;
+}
+.card-body>h5,.card-body>p,.card-body>h2 {
+        font-size: 16px;
+        margin: 16px 0px;
+        color: black;
+    }
+
+
+
+/* The slider itself */
+.slider-1 {
+    display: flex;
+    overflow-x: auto;  /* Horizontal scrolling */
+    scroll-behavior: smooth;
+    gap: 10px;
+    width: 100%;  /* Full width */
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.card {
-    max-width: 23%;
-    text-align: center;
-    flex: 0 0 230px;
+/* Hide the scrollbar for a cleaner design */
+.slider-1::-webkit-scrollbar {
+    display: none;
 }
+
+/* Product Card Style */
+.card {
+    min-width: 300px;
+    max-width: 350px;
+    text-align: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: none;
+}
+.card>img{
+    width: 80%;
+    margin: auto;
+}
+
+a.btn.btn-primary{
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+
 
 .rating {
     font-weight: bold;
@@ -296,22 +317,6 @@ h6 {
     padding-left: 50px;
     position: relative;
     padding-right: 50px;
-}
-
-
-.mdcard>img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.mdcard,
-.card{
-    text-align: center;
-    flex: 0 0 250px;
-    padding: 1rem;
-    text-align: center;
-    background: #fff;
 }
 
 
@@ -404,10 +409,9 @@ h6 {
     cursor: pointer;
 }
 
-.button-right,
-.button-left,.button-right-1,
+.button-right-2,
+.button-left-2,.button-right-1,
 .button-left-1 {
-
     cursor: pointer;
     padding: 12px;
     border: none;
@@ -421,14 +425,19 @@ h6 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background-color 0.2s;
     height: 50px;
-    margin-top: 15rem;
-    margin-left: 1rem;
 
 
 }
+.button-left-1{
+    margin-left: 5rem;
 
-.button-right:hover,
-.button-left:hover,.button-right-1:hover,
+}
+.button-right-1{
+    margin-right: 5rem;
+}
+
+.button-right-2:hover,
+.button-left-2:hover,.button-right-1:hover,
 .button-left-1:hover  {
     background-color: rgb(5, 5, 5);
     transform: scale(1.1);
