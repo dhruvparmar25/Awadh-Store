@@ -103,14 +103,14 @@
               </div>
               <div>
                 <label for="email">Email</label>
-                <input type="email"id="email"placeholder="example@.mail.com"/>
+                <input type="email"id="email" placeholder="example@.mail.com" required/>
                 <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" />
-                <label for="phone">Phone Number</label>
-                <input type="text"max="10"min="10"id="phone"placeholder="1234567890"/>
+                <input type="text" id="fullName" placeholder="Enter your FullName" required/>
+                <!-- <label for="phone">Phone Number</label>
+                <input type="text"max="10"min="10"id="phone"placeholder="1234567890"/> -->
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="*********" /> 
-                <input type="submit" value="signup" />
+                <input type="password" id="password" placeholder="*********" required/> 
+                <input type="submit"  onclick="saveData()" value="Signup" />
               </div>
             </div>
           </form>
@@ -121,10 +121,10 @@
               </div>
               <div>
                 <label for="email">Email</label>
-                <input type="email"id="email"placeholder="example@.mail.com" />
+                <input type="email"id="emails"placeholder="example@.mail.com" required />
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="*********" />
-                <input type="submit" value="login" />
+                <input type="password" id="passwords" placeholder="*********" required/>
+                <input type="submit" onclick="login()" value="Login" />
               </div>
             </div>
           </form>
@@ -280,5 +280,6 @@
 
       </section>
   </footer>
+  <script src="./sign-login.js"></script>
   </body>
 </html>
